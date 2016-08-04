@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Tetris game</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/preloadjs-0.4.1.min.js"></script>
+	<script type="text/javascript" src="js/kinetic-v4.6.0.min.js"></script>
+	<script type="text/javascript" src="js/rng.js"></script>
+	<script type="text/javascript" src="js/tetris.js"></script>
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			background: #eeeeee;
+		}
+
+		.hint {
+			color: #ffffff;
+			font-family: Arial;
+			font-size: 14pt;
+			font-weight: bold;
+		}
+
+		#wrap {
+			-width: 616px;
+			-height: 682px;
+			display: inline-block;
+		}
+
+		#canvas_area {
+			background: url('img/bg.png');
+			border-top: 1px solid #c0c0c0;
+			border-left: 1px solid #c0c0c0;
+			display: inline-block;
+		}
+		#canvas_hint {
+			display: inline-block;
+			float: top;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap" class="in-center">
+		<div id="canvas_area"></div>
+		<div id="canvas_hint"></div>
+		<div class="hint">Press spacebar to continue</div>
+	</div>
+</body>
+</html>
